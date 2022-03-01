@@ -38,9 +38,13 @@
 
 /* Esercizio-4 */
 .ex-4-dvd {
- 
+  animation-name: ghost;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
 }
 @keyframes ghost{
+  100%{opacity: 0;}
 }
 /* Esercizio-5 */
 .ex-5-dvd:hover {
@@ -49,7 +53,7 @@
   animation-duration: 3s;
   animation-timing-function: linear;
 }
-@keyframes circle{
+@keyframes win-hei{
   from{width: 100%, height: 100%}
   to{width: 130%, height: 130%}
 }
