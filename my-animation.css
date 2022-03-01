@@ -20,6 +20,19 @@
 /* Esercizio-2 */
 .ex-2-dvd:hover {
   transition-property: width;
-  transition-duration: 3s;
+  transition-duration: 13s;
+  transition-timing-function: ease-in-out;
   width: 50%;
+}
+
+/* Esercizio-3 */
+.ex-3-dvd:hover {
+  transition-property: border;
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+@keyframes circle{
+  from{border-radius: 0;}
+  to{border-radius: 50%;}
 }
