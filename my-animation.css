@@ -70,12 +70,10 @@
 }
 
 /* Esercizio-7 */
-.ex-7-dvd {
-  animation-name: ghost;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
+.ex-7-dvd:hover {
+  animation-name: grayscale;
+  animation-duration: 2s;
 }
-@keyframes ghost{
-  100%{opacity: 0;}
+@keyframes grayscale{
+  100%{filter: grayscale(100%);}
 }
