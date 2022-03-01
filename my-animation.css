@@ -19,10 +19,7 @@
 
 /* Esercizio-2 */
 .ex-2-dvd:hover {
-  animation-name: scroll-right;
-  animation-duration: 3s;
-}
-@keyframes full-color {
-  from{background-color: #fff;}
-  to{background-color: red;}
+  transition-property: width;
+  transition-duration: 3s;
+  width: 50%;
 }
