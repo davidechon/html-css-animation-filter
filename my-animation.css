@@ -46,6 +46,7 @@
 @keyframes ghost{
   100%{opacity: 0;}
 }
+
 /* Esercizio-5 */
 .ex-5-dvd:hover {
   transition-property: width;
@@ -63,7 +64,18 @@
   height: 60px;
 }
 
-@keyframes win-hei{
-  /* from{width: 100%, height: 100%}
-  to{width: 130%, height: 130%} */
+/* Esercizio-6 */
+.ex-6-dvd:hover {
+  filter: grayscale(100%);
+}
+
+/* Esercizio-7 */
+.ex-7-dvd {
+  animation-name: ghost;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes ghost{
+  100%{opacity: 0;}
 }
