@@ -77,3 +77,13 @@
 @keyframes grayscale{
   100%{filter: grayscale(100%);}
 }
+
+/* Esercizio-8 */
+.ex-8-dvd:hover {
+  filter:blur(5px) hue-rotate(90deg);
+}
+
+/* Esercizio-9 */
+.ex-9-dvd:hover {
+  filter:blur(5px) hue-rotate(90deg);
+}
