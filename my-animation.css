@@ -1,1 +1,28 @@
-body{background-color: red;}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tutte le classi da me create avranno desinenza "-dvd"*/
+
+/* Esercizio-1 */
+.ex-1-dvd:hover {
+  animation-name: full-color;
+  animation-duration: 3s;
+}
+@keyframes full-color {
+  from{background-color: #fff;}
+  to{background-color: red;}
+}
+
+/* Esercizio-2 */
+.ex-2-dvd:hover {
+  animation-name: scroll-right;
+  animation-duration: 3s;
+}
+@keyframes full-color {
+  from{background-color: #fff;}
+  to{background-color: red;}
+}
