@@ -85,5 +85,6 @@
 
 /* Esercizio-9 */
 .ex-9-dvd:hover {
-  filter:blur(5px) hue-rotate(90deg);
+  border-radius: 30px;
+  transform: scale(1.5);
 }
