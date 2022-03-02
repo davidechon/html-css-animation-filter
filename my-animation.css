@@ -91,7 +91,10 @@
 
 /* Esercizio-10 */
 .ex-10-dvd:hover {
-  animation: loading 1s linear infinite;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
 }
 
 @keyframes loading{
@@ -102,7 +105,9 @@
 
 /* Esercizio-11 */
 .ex-11-dvd:hover {
-  animation: loadingBit 2s linear;
+  animation-name: loadingBit;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 @keyframes loadingBit{
@@ -118,14 +123,101 @@
 }
 
 /* Esercizio-12 */
-.ex-12-top-white:hover {
-  border: 1px solid red;
-  animation-name: example;
-  animation-duration: 4s;
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: slide-top;
+  animation-duration: 2s;
+  animation-timing-function: linear ;
+}
+@keyframes slide-top {
+  0% {
+    left: 20%;
+  }
+  50% {
+    left: calc(100% - 60px);
+  }
+  100% {
+    left: 20%;
+  }
+}
+/* Esercizio-12 */
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: slide-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear ;
+}
+@keyframes slide-bottom {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  100% {
+    right: 20%;
+  }
 }
 
-@keyframes example {
-  0%   {left:0px;}
-  50%  {left:200px;}
-  100% {left:0px;}
+/* Esercizion 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: snake-top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes snake-top {
+  0% {
+    left: 10%;
+    top: -10px;
+   }
+  30% {
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  45% {
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  75% {
+    left: 0%;
+    top: 100%;
+  }
+  90% {
+    left: -15px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: snake-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes snake-bottom{
+  0% {
+    bottom: 10%;
+    right: -10px;
+   }
+  30% {
+    bottom: calc(100% - 30px);
+    right: -10px;
+  }
+  45% {
+    bottom: calc(100% - 30px);
+    right: 100%;
+  }
+  75% {
+    bottom: 0%;
+    right: 100%;
+  }
+  90% {
+    bottom: -15px;
+    right: -10px;
+  }
+  100% {
+    bottom: 10%;
+    right: -10px;
+  }
 }
