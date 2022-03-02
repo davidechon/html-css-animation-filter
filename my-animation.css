@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Tutte le classi da me create avranno desinenza "-dvd"*/
+/* Tutti i tag e le classi da me create avranno desinenza "-dvd" */
 
 /* Esercizio-1 */
 .ex-1-dvd:hover {
@@ -90,28 +90,31 @@
 }
 
 /* Esercizio-10 */
-.ex-10-dvd {
-  animation-name: loading;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
+.ex-10-dvd:hover {
+  animation: loading 1s linear infinite;
 }
 
 @keyframes loading{
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(1turn);
+  }
 }
 
 /* Esercizio-11 */
 .ex-11-dvd:hover {
-  animation-name: loading-3-4;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
+  animation: loadingBit 2s linear;
 }
 
-@keyframes loading-3-4{
-  0%{transform: rotate(0deg)}
-  70%{transform: rotate(270deg)}
+@keyframes loadingBit{
+  0% {
+    transform: rotate(0)
+  }
+  75% {
+    transform: rotate(315deg)
+  }
+  100% {
+    transform: rotate(0)
+  }
 }
 
 /* Esercizio-12 */
